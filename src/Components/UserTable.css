@@ -55,6 +55,10 @@ td button {
   border-radius: 4px;
 }
 
+.checkbox {
+  cursor: pointer;
+}
+
 .save {
   background-color: #28a745;
   color: #fff;

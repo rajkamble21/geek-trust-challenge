@@ -28,6 +28,7 @@ const UserTable = ({
           <th>
             <input
               type="checkbox"
+              className="checkbox"
               onChange={handleSelectAll}
               checked={selectAll}
             />
@@ -55,6 +56,7 @@ const UserTable = ({
               <td>
                 <input
                   type="checkbox"
+                  className="checkbox"
                   onChange={() => handleRowSelection(user.id)}
                   checked={selectedRows.includes(user.id)}
                 />

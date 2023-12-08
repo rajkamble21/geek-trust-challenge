@@ -6,6 +6,8 @@ import UserTable from "./UserTable";
 import Pagination from "./Pagination";
 import DeleteSelectedButton from "./DeleteSelectedButton";
 import "./Admin.css";
+import { toast } from "react-toastify";
+
 // Admin component
 const Admin = () => {
   // State variables to manage user data
@@ -54,6 +56,14 @@ const Admin = () => {
     setEditedName("");
     setEditedEmail("");
     setEditedRole("");
+
+    toast.success("Saved successfully", {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 2000, // Adjust as needed
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
   };
 
   // Function to handle cancelling edits
@@ -129,6 +139,26 @@ const Admin = () => {
 
     // Clear the selectedRows state
     setSelectedRows([]);
+
+    if(selectedRows.length!==0){
+      toast.error("All selected items have been successfully removed", {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+      });
+    }else{
+      toast.warn("Please select items to delete", {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+      });
+    }
+
+    
   };
 
   // Function to handle deleting a specific row
@@ -142,6 +172,14 @@ const Admin = () => {
 
     // Clear the selectedRows state if the deleted row was selected
     setSelectedRows(selectedRows.filter((rowId) => rowId !== id));
+
+    toast.error(`Deleted successfully`, {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
   };
 
   return (

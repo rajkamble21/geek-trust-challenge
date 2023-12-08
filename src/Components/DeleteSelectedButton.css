@@ -1,0 +1,20 @@
+/* DeleteSelectedButton.css */
+
+.delete-selected {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #dc3545;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-selected:hover {
+    background-color: #c82333;
+  }
+  
+  /* Optional: Add transition for a smooth hover effect */
+  .delete-selected {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  

@@ -1,0 +1,29 @@
+/* Admin.css */
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F4FF; 
+    color: #333; 
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .header {
+    background-color: #87C4FF;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #39A7FF;
+    border-radius: 20px;
+  }
+
+  
+  
+  

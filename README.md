@@ -1,3 +1,7 @@
+
+![image](https://github.com/rajkamble21/geek-trust/assets/70090963/5d1626ae-5bbb-49ba-8308-e002ec090e87)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
